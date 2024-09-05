@@ -6,7 +6,7 @@ abstract class FoodItem {
     protected string $description;
     protected string $price;
 
-    public function __construct(string $name, string $descriptio, string $price){
+    public function __construct(string $name, string $description, string $price){
         $this->name = $name;
         $this->$description = $description;
         $this->price = $price;
