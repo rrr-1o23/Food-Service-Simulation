@@ -12,6 +12,15 @@ abstract class FoodItem {
         $this->price = $price;
     }
 
+    public function getName() {
+        return $name;
+    }
+
+    public function getPrice() {
+        return $price;
+    }
+
+    // カテゴリを返す抽象メソッド
     abstract public static function getCategory(): string;
 
 }
