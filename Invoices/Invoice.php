@@ -26,4 +26,16 @@ class Invoice {
         return $this->getEstimatedTimeInMinutes;
     }
 
+    public function printInvoice(): void {
+        $formattedDate = date("Y/m/d H:i:s", $this->orderTime);
+        $separatorLine = str_repeat('-', 40);
+
+        printf(
+            "s\nDate: %s\nFinal Price: $%.2f\n%s\n",
+            $separatorLine,
+            $formattedDate,
+            $this->finalPrice,
+            $separatorLine
+        );
+    }
 }
